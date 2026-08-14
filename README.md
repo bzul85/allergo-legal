@@ -33,9 +33,25 @@ Adres wymagany przez Google Play Console (pole „Polityka prywatności”):
 
 1. Każdy dokument ma w nagłówku **numer wersji** i **datę wejścia w życie** — zmieniaj oba przy każdej zmianie merytorycznej.
 2. Wersje PL i EN muszą pozostać zgodne treściowo. Zmiana w jednym języku wymaga zmiany w drugim w tym samym commicie.
-3. Przy istotnej zmianie regulaminu zaktualizuj stałą `_termsVersion` w `lib/main.dart` aplikacji AllerGo, aby użytkownicy zostali poproszeni o ponowną akceptację.
+3. **Po każdej zmianie treści przegeneruj asset aplikacji** (patrz niżej) i zaktualizuj stałą `termsVersion` w `lib/main.dart`, aby użytkownicy zostali poproszeni o ponowną akceptację.
 4. Zmiana wpływająca na to, jakie dane obsługuje aplikacja, wymaga równoległej aktualizacji formularza **Bezpieczeństwo danych** w Google Play Console.
 5. Nie usuwaj istniejących adresów URL — są osadzone w aplikacji i w Play Console.
+
+## Synchronizacja z aplikacją
+
+Aplikacja AllerGo pokazuje **pełną treść obu dokumentów offline**, więc nosi ich kopię jako asset (`assets/legal/legal.json`). Kopia nie jest pobierana z sieci — aplikacja nie wykonuje żadnych własnych połączeń i polityka prywatności to deklaruje.
+
+Po zmianie treści HTML uruchom konwerter:
+
+```bash
+python3 tools/build_app_asset.py "/ścieżka/do/AllerGo"
+```
+
+Skrypt czyta opublikowane pliki HTML, spłaszcza je do czytelnego tekstu i zapisuje asset w repozytorium aplikacji. Pole `VERSION` w skrypcie musi zgadzać się z wersją w nagłówkach dokumentów.
+
+Zabezpieczenie: test `the asset version matches the Terms version users accept` w `test/widget_test.dart` porównuje `version` z assetu ze stałą `termsVersion`. Jeśli zmienisz jedno, a zapomnisz drugiego, testy aplikacji padają.
+
+Skrypt nie jest częścią builda Fluttera — uruchamiasz go ręcznie, gdy zmienia się treść.
 
 ## Hosting
 

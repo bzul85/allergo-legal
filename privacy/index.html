@@ -20,7 +20,7 @@
 
 <header>
   <h1>Privacy Policy</h1>
-  <p class="meta">Version 1.0 · effective 14 August 2026</p>
+  <p class="meta">Version 1.1 · effective 27 August 2026</p>
   <nav class="langbar">
     <a href="../privacy/" aria-current="true">English</a>
     <a href="../pl/privacy/">Polski</a>
@@ -105,8 +105,10 @@
 
 <h3>5.3 Android text-to-speech</h3>
 <ul>
-  <li>The read-aloud feature passes the card text to the speech synthesis engine <strong>installed on your operating system</strong> (for example Google’s engine or your device manufacturer’s).</li>
+  <li>The read-aloud feature passes the card text to the speech synthesis engine <strong>installed on your operating system</strong> (for example Google’s engine or your device manufacturer’s). The card text is sent there <strong>only once you start the read-aloud yourself</strong>.</li>
+  <li>The App may prepare a voice for the chosen language in advance, passing the engine <strong>a single neutral letter</strong> and never the content of your card.</li>
   <li>How that engine behaves — including whether it processes text locally or over a network connection — depends on its provider and your device settings, and is <strong>outside our control</strong>. Processing is governed by the TTS engine provider’s terms.</li>
+  <li>The App can open your system speech settings screen, but it neither reads nor changes those settings.</li>
   <li>If you prefer that card content is not passed to a TTS engine, simply do not use the read-aloud feature.</li>
 </ul>
 
@@ -119,7 +121,7 @@
 <h2>6. App permissions</h2>
 <ol>
   <li>The App does not request access to location, contacts, calendar, camera, microphone or photos.</li>
-  <li>The internet permission is declared in the application package because the Google Play Billing library and standard system components require it. <strong>The App’s own code makes no network calls of its own</strong> and sends your data to no server.</li>
+  <li>The application package declares the internet and network-state permissions. The Google Play Billing library and standard system components require internet access; the App checks network state for one purpose only, so that the automatic voice preparation waits for an unmetered connection. <strong>The App’s own code makes no network calls of its own</strong> and sends your data to no server. The system speech engine may use a network connection as described in 5.3.</li>
   <li>PDF files are written through the system storage mechanism into the Downloads folder and do not require access to your whole device storage on current Android versions.</li>
 </ol>
 

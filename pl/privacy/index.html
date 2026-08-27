@@ -20,7 +20,7 @@
 
 <header>
   <h1>Polityka prywatności aplikacji AllerGo</h1>
-  <p class="meta">Wersja 1.0 · obowiązuje od 14 sierpnia 2026 r.</p>
+  <p class="meta">Wersja 1.1 · obowiązuje od 27 sierpnia 2026 r.</p>
   <nav class="langbar">
     <a href="../../pl/privacy/" aria-current="true">Polski</a>
     <a href="../../privacy/">English</a>
@@ -105,8 +105,10 @@
 
 <h3>5.3 Synteza mowy (TTS) systemu Android</h3>
 <ul>
-  <li>Funkcja odczytu karty przekazuje tekst karty do mechanizmu syntezy mowy <strong>zainstalowanego w Twoim systemie operacyjnym</strong> (np. silnika Google lub silnika producenta urządzenia).</li>
+  <li>Funkcja odczytu karty przekazuje jej tekst do mechanizmu syntezy mowy <strong>zainstalowanego w Twoim systemie operacyjnym</strong> (np. silnika Google lub silnika producenta urządzenia). Tekst karty trafia tam <strong>dopiero po świadomym uruchomieniu odczytu przez Ciebie</strong>.</li>
+  <li>Aplikacja może wcześniej przygotować głos dla wybranego języka, przekazując mechanizmowi wyłącznie jedną neutralną literę; <strong>nie przekazuje wtedy treści karty</strong>.</li>
   <li>Sposób działania tego mechanizmu, w tym to, czy przetwarza tekst lokalnie, czy z wykorzystaniem połączenia sieciowego, zależy od jego dostawcy i ustawień Twojego urządzenia i <strong>pozostaje poza naszą kontrolą</strong>. Zasady przetwarzania określa dostawca silnika TTS.</li>
+  <li>Aplikacja może otworzyć systemowy ekran ustawień syntezy mowy, ale nie odczytuje ani nie zmienia tych ustawień.</li>
   <li>Jeżeli nie chcesz, aby treść karty trafiała do silnika TTS, po prostu nie korzystaj z funkcji odczytu głosowego.</li>
 </ul>
 
@@ -119,7 +121,7 @@
 <h2>6. Uprawnienia aplikacji</h2>
 <ol>
   <li>Aplikacja nie żąda dostępu do lokalizacji, kontaktów, kalendarza, kamery, mikrofonu ani zdjęć.</li>
-  <li>Uprawnienie dostępu do internetu jest deklarowane w pliku aplikacji, ponieważ wymaga go biblioteka Google Play Billing oraz standardowe komponenty systemowe. <strong>Kod samej Aplikacji nie wykonuje żadnych własnych połączeń sieciowych</strong> i nie wysyła Twoich danych do żadnego serwera.</li>
+  <li>W pliku aplikacji zadeklarowane są uprawnienia dostępu do internetu i odczytu stanu sieci. Internetu wymaga biblioteka Google Play Billing oraz standardowe komponenty systemowe; stan sieci Aplikacja sprawdza wyłącznie po to, by automatyczne przygotowanie głosu czekało na połączenie nietaryfowe. <strong>Kod samej Aplikacji nie wykonuje własnych połączeń sieciowych</strong> i nie wysyła Twoich danych do żadnego serwera. Systemowy mechanizm syntezy mowy może korzystać z połączenia sieciowego na zasadach opisanych w pkt 5.3.</li>
   <li>Zapis pliku PDF odbywa się przez systemowy mechanizm zapisu w katalogu Pobrane i nie wymaga dostępu do całej pamięci urządzenia na współczesnych wersjach Androida.</li>
 </ol>
 

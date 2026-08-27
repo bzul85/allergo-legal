@@ -17,7 +17,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
-VERSION = "2026-08-27"
+VERSION = "2026-08-28"
 
 BASE_URL = "https://bzul85.github.io/allergo-legal"
 

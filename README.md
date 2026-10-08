@@ -1,6 +1,6 @@
 # allergo-legal
 
-Publiczne dokumenty prawne aplikacji mobilnej **AllerGo** (Android, Google Play).
+Publiczne dokumenty prawne aplikacji mobilnej **AllerGo** (Android / Google Play oraz iOS / App Store).
 Repozytorium zawiera wyłącznie statyczny HTML — kod aplikacji jest w osobnym, prywatnym repozytorium.
 
 ## Adresy publiczne

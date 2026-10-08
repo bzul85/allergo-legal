@@ -20,7 +20,7 @@
 
 <header>
   <h1>Privacy Policy</h1>
-  <p class="meta">Version 1.1 · effective 27 August 2026</p>
+  <p class="meta">Version 1.2 · effective 8 October 2026</p>
   <nav class="langbar">
     <a href="../privacy/" aria-current="true">English</a>
     <a href="../pl/privacy/">Polski</a>
@@ -37,7 +37,7 @@
     <li><strong>Your allergies, profiles and travel sets stay on your device.</strong> They are never sent to us and we cannot access them.</li>
     <li><strong>No ads, no analytics, no tracking.</strong> We use no advertising identifiers and no profiling tools.</li>
     <li><strong>No data is shared with third parties.</strong></li>
-    <li>Payments are handled by Google Play — we never see your payment details.</li>
+    <li>Payments are handled by Google Play or the App Store — we never see your payment details.</li>
   </ul>
 </div>
 
@@ -46,7 +46,7 @@
   <li>The controller under the GDPR for any data relating to the AllerGo application (the “App”) is Adrian Kazula, an individual running the AllerGo project.</li>
   <li>For all privacy matters, contact: <a href="mailto:bzul.dev@gmail.com">bzul.dev@gmail.com</a>.</li>
   <li>No data protection officer has been appointed, as the conditions requiring one do not apply.</li>
-  <li>This policy covers the AllerGo mobile app distributed via Google Play and this website hosting the legal documents.</li>
+  <li>This policy covers the AllerGo mobile app distributed via Google Play (Android) and the App Store (iOS), and this website hosting the legal documents.</li>
 </ol>
 
 <h2>2. What we do NOT collect</h2>
@@ -64,7 +64,7 @@
 
 <h2>3. Data stored locally on your device</h2>
 <ol>
-  <li>To function, the App saves the information you enter <strong>only in your device’s storage</strong>, in the app data area protected by Android. This includes:
+  <li>To function, the App saves the information you enter <strong>only in your device’s storage</strong>, in the app data area protected by Android or iOS. This includes:
     <ul>
       <li>selected allergens and their display settings;</li>
       <li>allergy profiles (including family profiles) and the active profile;</li>
@@ -76,8 +76,8 @@
     </ul>
   </li>
   <li>This data is <strong>never sent to us</strong>. We cannot read it, recover it or delete it remotely.</li>
-  <li>Home screen widgets use a separate local store on the device to display the current card. That data also never leaves the device.</li>
-  <li>PDF files you export are saved to your device storage (the Downloads/AllerGo folder). Any further use, including sharing them with anyone, happens solely at your initiative and under your control.</li>
+  <li>Home screen widgets use a separate local store on the device (on iOS, a folder shared by the App and its widgets) to display the current card. That data also never leaves the device.</li>
+  <li>PDF files you export are saved to your device storage (on Android in the Downloads/AllerGo folder; on iOS the App hands the file to the system share sheet, and you choose where it is saved or who receives it). Any further use, including sharing them with anyone, happens solely at your initiative and under your control.</li>
 </ol>
 
 <h2>4. Health and allergy information</h2>
@@ -112,7 +112,21 @@
   <li>If you prefer that card content is not passed to a TTS engine, simply do not use the read-aloud feature.</li>
 </ul>
 
-<h3>5.4 This website</h3>
+<h3>5.4 App Store and in-app purchases (iOS)</h3>
+<ul>
+  <li>On Apple devices, downloading and updating the App happens through the App Store, and Apple carries out and settles any purchase of AllerGo Pro as the seller and a <strong>separate controller</strong>, under its own rules.</li>
+  <li>We do not receive or store payment data or your Apple Account details. The App only reads a technical entitlement status (whether a purchase is active).</li>
+  <li>If you have agreed in your iOS settings to share analytics with app developers, Apple may provide us with <strong>aggregated, anonymised</strong> statistics and crash reports in App Store Connect. These do not identify you and contain none of the content you entered in the App. You can withdraw this consent at any time in your device settings.</li>
+  <li>Apple’s policy: <a href="https://www.apple.com/legal/privacy/" rel="noopener">apple.com/legal/privacy</a>.</li>
+</ul>
+
+<h3>5.5 iOS speech synthesis</h3>
+<ul>
+  <li>On Apple devices the read-aloud feature passes the card text to the iOS system speech synthesis <strong>only once you start the read-aloud yourself</strong>. The App does not download voices or open the speech settings; it uses only the voices available in the system.</li>
+  <li>How speech synthesis works is determined by Apple and <strong>is outside our control</strong>.</li>
+</ul>
+
+<h3>5.6 This website</h3>
 <ul>
   <li>This legal-documents site is hosted on GitHub Pages (GitHub, Inc.). The hosting provider may process technical access data, including IP addresses, to deliver the site and maintain security.</li>
   <li>The site uses no cookies, no analytics and no forms.</li>
@@ -123,6 +137,7 @@
   <li>The App does not request access to location, contacts, calendar, camera, microphone or photos.</li>
   <li>The application package declares the internet and network-state permissions. The Google Play Billing library and standard system components require internet access; the App checks network state for one purpose only, so that the automatic voice preparation waits for an unmetered connection. <strong>The App’s own code makes no network calls of its own</strong> and sends your data to no server. The system speech engine may use a network connection as described in 5.3.</li>
   <li>PDF files are written through the system storage mechanism into the Downloads folder and do not require access to your whole device storage on current Android versions.</li>
+  <li>On iOS the App declares no internet or network-state permissions. Network connections are made only by the system App Store components that handle purchases. The App’s own code sends your data to no server.</li>
 </ol>
 
 <h2>7. Children and teenagers</h2>
@@ -147,11 +162,12 @@
   </li>
   <li>If you have enabled Android system backup, the system may back up app data to your Google account. That is an Android mechanism controlled by Google and by you; it can be disabled in your device settings.</li>
   <li>Purchase history remains in your Google Play account under Google’s rules and is outside our control.</li>
+  <li>On iOS you can delete the App’s data by uninstalling it (Settings → General → iPhone Storage → AllerGo → Delete App). If you use iCloud Backup or a computer backup, the system may include the App’s data; that mechanism is controlled by Apple and by you. Purchase history remains in your Apple Account under Apple’s rules.</li>
 </ol>
 
 <h2>9. Security</h2>
 <ol>
-  <li>Data saved by the App is protected by the Android application sandbox — other apps cannot access it under normal conditions.</li>
+  <li>Data saved by the App is protected by the Android or iOS application sandbox — other apps cannot access it under normal conditions.</li>
   <li>Because there is no data transmission, there is no risk of interception in transit to a server or of a server-side breach, as no such server exists.</li>
   <li>Security therefore depends on protecting the device itself. We recommend using a screen lock, keeping the system updated and avoiding apps from unknown sources. A device with unlocked administrative access (root) weakens system protections.</li>
   <li>If you find a vulnerability or security problem, report it to <a href="mailto:bzul.dev@gmail.com">bzul.dev@gmail.com</a>.</li>
@@ -161,13 +177,13 @@
 <ol>
   <li>The GDPR grants data subjects rights of access, rectification, erasure, restriction of processing, data portability, objection, and withdrawal of consent.</li>
   <li>Because <strong>we collect and store none of your personal data, we cannot identify you</strong> or link you to any data on our side (Article 11 GDPR). In practice this means you control your data yourself, on your own device, as described in section 8.</li>
-  <li>For data processed by Google (purchases, the store, your account, system backup, the TTS engine) you exercise these rights against Google under its privacy policy.</li>
+  <li>For data processed by Google (purchases, the store, your account, system backup, the TTS engine) you exercise these rights against Google under its privacy policy, and for data processed by Apple (the App Store, purchases, your Apple Account, iCloud, iOS speech synthesis) against Apple under its privacy policy.</li>
   <li>You have the right to lodge a complaint with a supervisory authority. In Poland this is the President of the Personal Data Protection Office, ul. Stawki 2, 00-193 Warsaw (<a href="https://uodo.gov.pl" rel="noopener">uodo.gov.pl</a>). You may also contact the authority for your place of residence.</li>
   <li>California residents: we do not sell or share personal information as defined by the CCPA/CPRA, because we collect none.</li>
 </ol>
 
 <h2>11. International transfers</h2>
-<p>We transfer no personal data outside the European Economic Area, because we collect none. Any transfers carried out by Google (in connection with the store, payments, backup or the TTS engine) and by this site’s hosting provider are made on the terms and legal bases set by those entities.</p>
+<p>We transfer no personal data outside the European Economic Area, because we collect none. Any transfers carried out by Google or Apple (in connection with the store, payments, backup or speech synthesis) and by this site’s hosting provider are made on the terms and legal bases set by those entities.</p>
 
 <h2>12. Legal basis</h2>
 <p>We do not process personal data of App users, so no legal basis under Article 6 GDPR arises on our side. If you write to us by email, we process the data contained in your message solely to answer you and handle your request — on the basis of our legitimate interest (Article 6(1)(f) GDPR), and for complaints in order to meet our statutory obligations (Article 6(1)(c) GDPR). We keep correspondence for as long as needed to handle the matter and demonstrate that it was handled.</p>
